@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Search, ChevronDown } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
-const API_URL = 'http://localhost:5001';
+const API_URL = 'http://erhelper-production.up.railway.app';
 
 export default function EldenRingHelper() {
   const [searchQuery, setSearchQuery] = useState('');
