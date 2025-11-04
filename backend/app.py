@@ -778,7 +778,8 @@ def view_ai_cache(enemy_name):
         })
     else:
         return jsonify({'error': 'Not found in cache'}), 404
-
+        
+import os
 if __name__ == '__main__':
     # Load data on startup (uses cache if available)
     load_elden_ring_data()
@@ -791,4 +792,5 @@ if __name__ == '__main__':
     print("\n🎮 Elden Ring Helper API")
     print("🔗 http://localhost:5001\n")
     
-    app.run(debug=False, host='0.0.0.0', port=5001, use_reloader=False)
+    port = int(os.environ.get("PORT", 5001))
+    app.run(debug=True, host='0.0.0.0', port=5001, use_reloader=False)
