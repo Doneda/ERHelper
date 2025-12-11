@@ -179,7 +179,7 @@ export default function EldenRingHelper() {
     if (v < 40) return '#e6e329ff';
     if (v < 60) return '#ea8621ff';
     if (v < 80) return '#e9452aff';
-    return '#22c55e';
+    return '#e9452aff';
   };
 
   const getResistanceColor = (v) => {
@@ -188,7 +188,7 @@ export default function EldenRingHelper() {
     if (v < 600) return '#e6c80aff';
     if (v < 900) return '#e66925ff';
     if (v < 1200) return '#e62525ff';
-    return '#22c55e';
+    return '#e9452aff';
   };
 
   const formatAIText = (text) => {
